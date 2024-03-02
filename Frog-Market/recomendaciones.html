@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/Recomendaciones.CSS">
+        <link rel="stylesheet" href="CSS/Style.CSS">
+        <title>Recomendaciones</title>
+</head>
+<body style="background-image: url(Img/desktop-wallpaper-kawaii-frog-laptop-cute-frog.jpg);">
+   <!-------------------------- Titulo ------------------------>
+   <section>
+    <div class="anime container-titulo d-flex justify-content-center align-items-center" style="background: linear-gradient(to right, #a4fff7, #039554), url('Img/Logo1.png'); background-size: cover; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); height: 100px; margin: 10px;">
+        <div class="logo-container">
+            <a href="Index.php"><img class="logo" src="Img/Logo1.png" alt=""></a>
+        </div>
+        <div class="text-container text-center">
+            <h1 class="titulo" style="font-family: 'Comic Sans MS', cursive; font-size: 2rem; color: #ff6600; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0;">Frog-Market</h1>           
+            <h2 class="slogan" style="font-family: 'Comic Sans MS', cursive; font-size: 1.5rem; color: #356698; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-top: 0;">¿Lo quieres? ¡Lo Tienes!</h2>
+        </div>
+    </div>
+</section>
+    
+                  
+    <!-------------------------- Nav ------------------------>
+    <div>
+        <nav class="anime navbar navbar-expand-lg navbar-dark bg-dark rounded"> 
+            <div class="container-fluid">                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto"> 
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Index.php">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Productos.php">Productos</a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="comentarios.php">Comentarios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">              
+                            <a class="dropdown-item" href="Desarrolladores.html">Desarrolladores</a>
+                            <a class="dropdown-item" href="recomendaciones.html">Recomendaciones</a>
+                            <a class="dropdown-item" href="reseñas.html">Reseñas</a>
+                         </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div> <!----cierre div de Titulo---->
+<br>
+<br>
+    <section class="form-register">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-4 text-center">
+                    <h1 class="text-center text-primary">Recomendaciones</h1>
+                    <h3 class="text-center text-primary">Nombre:</h3>
+                    <input type="text" class="controls" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+
+                    <h3 class="text-center text-primary">Nombre del Libro:</h3>
+                    <input type="text" class="controls" id="nomlib" name="nomlib" placeholder="Ingresa el nombre del libro">
+
+                    <h3 class="text-center text-primary">Imagen:</h3>
+                    <input type="file" class="controls" id="imagen" name="imagen" placeholder="Insertar Imagen del Libro" accept="image/*">
+                    
+                    <h3 class="text-center text-primary">Comentario:</h3>
+                    <input type="text" class="controls" id="comentario" name="comentario" placeholder="Da un comentario">
+                    <br>
+                    <br>
+                    <center><input type='submit' onclick="agregar()" class='btn btn-primary' value='Añadir Recomendación'></center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------- Footer ------------------------>
+<footer class="bg-dark text-white text-center py-4">   
+  <div class="container" style="text-align: center;">
+      <div class="row" style="text-align: center;">
+          <div class="col-md-4" style="text-align: center;">
+              <h4 style="text-align: center;">Contacto</h4>
+              <p><strong>Dirección:</strong> Fransico I Madero #69</p>
+              <p><strong>Teléfono:</strong> 449-756-4013</p>
+              <p><strong>Email:</strong> alex132moreno@gmail.com</p>
+          </div>
+          <div class="col-md-4" style="text-align: center;">
+              <h4 style="text-align: center;">Enlaces Rápidos</h4>
+              <ul class="enlaces-rapidos">
+                  <li><a href="Index.php">Inicio</a></li>
+                  <li><a href="Productos.html">Productos</a></li>
+                  <li><a href="https://wa.me/qr/5LWA4JBV67GBL1">Contacto</a></li>
+              </ul>
+          </div>
+          <div class="col-md-4">
+              <h4 style="text-align: center;">Síguenos en Redes Sociales</h4>
+          <div class="redes-sociales">
+              <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=61553113776063&mibextid=2JQ9oc" target="_blank"><img src="Img/facebook.png" alt="Facebook"> Facebook</a></li>
+                <li><a href="#" target="_blank"><img src="Img/twitter.png" alt="Twitter"> Twitter</a></li>
+                <li><a href="#" target="_blank"><img src="Img/instagram.png" alt="Instagram"> Instagram</a></li>
+                <li><a href="https://www.linkedin.com/in/frog-market-53673928a/" target="_blank"><img src="Img/linkedin.png" alt="LinkedIn"> LinkedIn</a></li>
+              </ul>
+          </div>
+          </div>
+      </div>
+      <div class="row mt-4">
+          <div class="col-md-12 text-center">
+              <p>&copy; 2023 Frog-Market. Todos los derechos reservados.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+<script src="JS/recomendaciones.JS"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script> 
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="JS/Script.JS"></script>
+</body>
+</html>

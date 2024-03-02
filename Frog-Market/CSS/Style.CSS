@@ -1,0 +1,897 @@
+body
+{    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Carrito */
+.card-body 
+{
+    text-align: center;
+}
+
+.btn-primary 
+{
+    width: 100%;
+}
+
+.list-group-item 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn 
+{
+    transition: transform 0.3s;
+}
+
+.btn:hover 
+{
+    transform: scale(1.1);
+}
+
+.card 
+{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-animado 
+{
+    font-size: 4rem;
+    text-align: center;
+    animation: animacionTitulo 2s infinite alternate;
+    font-family: 'Pacifico', cursive;
+}
+
+.card-img 
+{
+    height: 200px; /* Tamaño igual */
+    object-fit: cover;
+}
+
+.card-img:hover 
+{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+/* Menu de Navegacion */
+.navbar 
+{
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand 
+{
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link 
+{
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.navbar-toggler-icon 
+{
+    background-color: #fff; 
+}
+
+.navbar-toggler:focus 
+{
+    outline: none;
+}
+
+.navbar-nav 
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav .nav-link:hover 
+{
+    color: aqua;
+}
+
+
+/* ¿Sabias que? */
+/* Estilo para el fondo blanco y border radius */
+.styled-div {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff; /* Fondo blanco */
+    border: none;
+    border-radius: 15px; /* Cambia el valor según tus preferencias */
+}
+
+/* Estilo para el contenedor centered */
+.container-centered 
+{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+    padding: 20px;
+    background-color: #fff; 
+}
+
+/* Estilo para el título de la sección */
+.seccion-title {
+    color: #fff;
+    background: linear-gradient(to right, #a4fff7, #AA1192);
+    padding: 10px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Footer */
+footer 
+{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales 
+{
+    margin-bottom: 20px;
+}
+
+.redes-sociales a 
+{
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.redes-sociales img 
+{
+    width: 30px;
+    height: 30px;
+}
+
+.contacto 
+{
+    margin-bottom: 10px;
+}
+
+.contacto p 
+{
+margin: 0;
+}
+
+footer 
+{
+background-color: #333;
+color: #fff;
+text-align: l;
+padding: 1em;
+}
+
+.redes-sociales a,
+.enlaces-rapidos a
+{
+color: white; 
+text-decoration: none; 
+transition: color 0.3s; /* transición hover */
+}
+
+.redes-sociales img 
+        {
+            vertical-align: middle; /* Alinear verticalmente las imágenes con el texto */
+            margin-right: 5px; /* Añadir espacio a la derecha de las imágenes */
+        }
+
+.redes-sociales a:hover,
+.enlaces-rapidos a:hover
+{
+    color: #00FFFF; 
+}
+
+/* Carrusel */
+.carousel-inner img 
+{
+    width: 95%;
+    height: 350px; /* Altura Carrusel */
+    display: block;
+    object-fit: cover; 
+} 
+.titulo
+{
+    text-align: center;
+}
+.slogan
+{
+    text-align: center;
+}
+.logo 
+{
+width: 150px; /* Ancho del logo  */
+height: 150px; /* Alto del logo  */    
+}
+.container-titulo 
+{    
+align-items: center;    
+text-align: center;
+}
+
+
+/*Fondo Gris y Boton evento*/
+header 
+{
+    height: 100vh;
+    background: url('Img/Tienda.jfif') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+header::before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Filtro oscuro */
+    pointer-events: none;  /* Eventos sin Afectar */
+}
+
+header h1 
+{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+header p 
+{
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+header button 
+{
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;            
+}
+
+.inicio 
+{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.inicio h2 
+{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+header .btdes 
+{
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative; /* posicionado relativa */
+    z-index: 1;   /* botón sobre las capas */
+}
+
+header .btdes:hover 
+{
+    background-color: #0056b3;
+}
+
+/*Capas del h1 y p*/
+
+.capa-container 
+{
+    position: relative;
+    z-index: 2; /* Coloca los elementos del encabezado sobre el filtro */
+}
+
+.capa-container h1,
+.capa-container p 
+{
+    animation: animateText 1s ease-in-out;
+}
+@keyframes animateText {
+0% {
+transform: scale(1);
+}
+50% {
+transform: scale(1.1);
+}
+100% {
+transform: scale(1);
+}
+}
+
+
+
+/* Card lo mas Vendido */
+.custom-card 
+{
+    width: 18rem;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover 
+{
+    transform: scale(1.05);
+}
+
+.custom-card img 
+{
+    max-width: 100%;
+    height: 300px; 
+    object-fit: cover; /* Asegura que la imagen mantenga su relación de aspecto y cubra el contenedor */
+    border-radius: 8px; 
+    animation: fadeIn 0.5s ease-in-out; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Membresia */
+.loyalty-buylevel6 {
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.loyalty-buylevel6__header {
+    text-align: center;
+    background: linear-gradient(var(--deg_loyalty), var(--first_color_loyalty), var(--second_color_loyalty));
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.loyalty-buylevel6__header__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.loyalty-buylevel6__header-price {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.loyalty-buylevel6__header-cents {
+    font-size: 18px;
+}
+
+.loyalty-buylevel6__header-period {
+    font-size: 18px;
+}
+
+.loyalty-buylevel6__body {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.loyalty-buylevel6__body-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.loyalty-buylevel6__body-benefits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.loyalty-buylevel6__body-benefit {
+    width: 30%;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.loyalty-buylevel6__body-benefit-logo-img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.loyalty-buylevel6__body-benefit-text {
+    font-size: 16px;
+    color: #555;
+}
+
+.loyalty-buylevel6__action {
+    margin-top: 20px;
+}
+
+.custom-button {
+    background-color: #3498db;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #2980b9;
+}
+
+
+/*Carrusel de ofertas del dia*/
+.carousel-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff; /* Cambio de color de fondo a blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.product-item {
+  flex: 0 0 auto;
+  width: calc(25% - 40px); /* Ajuste para mostrar 4 productos a la vez */
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-right: 20px;
+}
+
+.product-item img 
+{
+  width: 100%;
+  height: 170px; 
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.product-item h2 {
+  margin-bottom: 10px;
+}
+
+.buy-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.buy-button:hover {
+  background-color: #000;
+}
+
+.product-item:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-item {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-item:hover {
+  background-color: #000;
+}
+
+.arrow {
+  font-size: 24px;
+}
+
+ /*Categorias*/
+ .categories-container 
+ {
+   text-align: center;
+ }
+
+ .category-item 
+ {
+   margin: 10px;
+   display: inline-block;
+   overflow: hidden;
+   transition: transform 0.3s, background-color 0.3s;
+   background-color: #ffffff; 
+   border-radius: 10px; 
+
+ }
+
+ .category-item:hover 
+ {
+   transform: scale(1.1);
+   background-color: #00FFFF /* Cambiar a tu color preferido al hacer hover */
+ }
+
+ .category-item img 
+ {
+   width: 100px;
+   height: auto;
+ }
+
+ .category-link 
+ {
+   text-decoration: none;
+   color: #333;
+ }
+
+ .category-link:hover 
+ {
+   color: #fff; /* Texto hover */
+ }
+ 
+ 
+ 
+ /*Video Promocional*/
+ .video-section {
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Ajusta el espaciado interno según sea necesario */
+    border-radius: 20px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción para el video (ajusta según necesites) */
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text-content {
+    padding: 15px; /* Reducción del espaciado interno */
+}
+
+
+ /* Marcas Originales */
+ .collage-item 
+        {
+            margin-bottom: 20px; 
+            transition: margin 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+        .collage-item:hover 
+        {
+            margin-bottom: 15px; /* Ajusta el margen al pasar el cursor para crear un efecto de expansión */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Agrega un sombreado sutil al pasar el cursor */
+        }
+
+        .andes-card .item-image img {
+            width: 100%; /* Ajustar al 100% del contenedor */
+            height: 100%; /* Ajustar al 100% del contenedor */
+            object-fit: cover; /* Ajustar imagen manteniendo la proporción y cubriendo el contenedor */
+        }
+
+        .item-description 
+        {
+            text-align: center; 
+        }
+
+        .item-description p 
+        {
+            margin-bottom: 0; 
+        }
+
+        .containercoll
+         {
+            border-radius: 10px;
+         }
+
+/* Promociones */
+.promociones 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+.promocion 
+{
+    flex: 1;
+    max-width: 100%;
+    width: 90%;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.promocion:hover 
+{
+    transform: scale(1.05);
+    background-color: #007bff;
+    color: white;
+}
+
+.promocion:hover .tituloPromocion,
+.promocion:hover .descripcionPromocion 
+{
+    color: white;
+}
+
+.promocion .tituloPromocion 
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.promocion .descripcionPromocion 
+{
+    font-size: 16px;
+    color: #333;
+    display: none;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .promociones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .promocion {
+        margin: 5px;
+    }
+}
+
+/* Anuncios */
+.imagen-seccion 
+{
+    width: 80%;
+    max-width: 1600px;
+    height: 340px; 
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-seccion a 
+{
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagen-seccion a:hover 
+{
+    transform: scale(1.1); 
+}
+
+.imagen-seccion img 
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Cuadros publicitarios */
+.anuncios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.anuncio {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.anuncio:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color: #007bff;
+}
+
+.anuncio img {
+    max-width: 100%;
+    height: 150px; /* Establece la altura deseada para las imágenes */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.anuncio h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.anuncio p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Aplicar diseño responsivo cuando el ancho de la pantalla sea menor a 600px */
+@media screen and (max-width: 600px) {
+    .anuncios {
+        flex-direction: column; /* Cambia la dirección del flujo a columna */
+        align-items: stretch; /* Alinea los elementos estirándolos */
+    }
+}
+
+/* Proximos Lanzamientos */
+.contenedor-videos
+        {
+            background-color: white; /* Establece el fondo blanco */
+        }
+
+        .seccion-videos 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .video 
+        {
+            flex: 1;
+            max-width: 300px;
+            height: 400px;
+            margin: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            overflow: hidden; 
+        }
+
+        .video iframe 
+        {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px; 
+        }
+
+        .video h3, .video p 
+        {
+            margin: 10px 0;
+        }
+
+        @media only screen and (max-width: 600px) 
+        {
+            .video 
+            {
+                flex: 1 0 100%; /* En pantallas pequeñas, ocupar toda la anchura */
+                max-width: none; /* Ancho máximo sin restricciones */
+            }
+        }
+
+/* Imagenes Promocionales */
+.collage-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px; /* Añadido para evitar espacios entre los elementos */
+}
+
+.collage-item {
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    margin: 0; /* Elimina el margen */
+    box-sizing: border-box; /* Añadido para que el padding no afecte al tamaño total */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin bordes */
+    box-shadow: none; /* Sin sombras */
+}
+
+.collage-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .collage-item {
+        flex: 1 1 calc(50% - 10px); /* Hace que los contenedores sean más pequeños en dispositivos con pantalla ancha de hasta 600px */
+    }
+}
+
+.collage-item:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/Style.CSS">
+    <link rel="stylesheet" href="CSS/Resposivo.CSS">
+    <link rel="icon" href="Img/Logo1.png">
+    <style>
+       body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .developer-container 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .developer {
+            flex: 1 1 calc(50% - 20px);
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .developer:hover {
+            transform: translateY(-10px);
+        }
+
+        .developer img {
+            border-radius: 50%;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .developer img:hover {
+            transform: scale(1.1);
+        }
+
+        .developer .developer-name {
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .developer .developer-expertise {
+            color: #666;
+            font-size: 1em;
+        }
+
+        .developer .social-icons {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .developer .social-icons li {
+            margin: 0 5px;
+        }
+
+        .developer .social-icons a img {
+            max-width: 40px; /* Ajusta el tamaño máximo */
+            max-height: 40px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .developer .social-icons a img:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .developer:nth-child(odd) {
+            background: linear-gradient(to right, #7ec8e3, #66a5b8);
+        }
+
+        .developer:nth-child(even) {
+            background: linear-gradient(to right, #ff7e5f, #d65a4d);
+        }
+
+
+        .section-container 
+        {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: linear-gradient(to right, #4CAF50, #5E35B1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            color: #fff; 
+            transition: transform 0.3s ease-in-out;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .section-title 
+        {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .section-data 
+        {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .section-data strong 
+        {
+            font-weight: bold;
+        }
+
+        .center-image 
+        {
+            display: block;
+            margin: auto;
+            text-align: center; /* Puedes eliminar esta línea si no es necesaria */
+        }
+    </style>
+    <title>Desarrolladores</title>
+</head>
+<body onload="deshabilitaRetroceso();">
+    <!-------------------------- Titulo ------------------------>
+    <section>
+        <div class="anime container-titulo d-flex justify-content-center align-items-center animated" style="background: linear-gradient(to right, #a4fff7, #039554), url('Img/Logo1.png'); background-size: cover; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); height: 100px; margin: 10px; ">
+            <div class="logo-container animated">
+                <img class="logo" src="Img/Logo1.png" alt="">
+            </div>
+            <div class="text-container text-center animated">
+                <h1 class="titulo" style="font-family: 'Comic Sans MS', cursive; font-size: 2rem; color: #ff6600; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-bottom: 0;">Frog-Market</h1>           
+                <h2 class="slogan" style="font-family: 'Comic Sans MS', cursive; font-size: 1.5rem; color: #356698; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); margin-top: 0;">¿Lo quieres? ¡Lo Tienes!</h2>
+            </div>
+        </div>
+    </section>
+        
+                      
+           <!-------------------------- Nav ------------------------>
+    <div>
+        <nav class="anime navbar navbar-expand-lg navbar-dark bg-dark rounded"> 
+            <div class="container-fluid">                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Index.php">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Productos.php">Productos</a>
+                        </li>                         
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="comentarios.php">Comentarios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Más</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">              
+                            <a class="dropdown-item" href="Desarrolladores.html">Desarrolladores</a>
+                            <a class="dropdown-item" href="recomendaciones.html">Recomendaciones</a>
+                            <a class="dropdown-item" href="reseñas.html">Reseñas</a>
+                         </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div> <!----cierre div de Titulo---->
+
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="..." class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="..." class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="..." class="d-block w-100 img-fluid" alt="...">
+          </div>
+        </div>
+      </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden" style="color: black;"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden"style="color: black;">></span>
+        </button>
+      </div>
+
+
+
+    <div class="section-container animated">
+        <img src="Img/Utna.png" class="center-image" alt="utna" width="170" height="90">
+        <div class="section-title">Información del Informe del Proyecto</div>
+        <div class="section-data"><strong>Carrera:</strong> Tecnologías De La Información Área De Desarrollo De Software Multiplataforma (TIDSM).</div>
+        <div class="section-data"><strong>Nombre Completo De La Materia:</strong>Diseño de APPS.</div>
+        <div class="section-data"><strong>Nombre De El Profesor:</strong> Daniel Eduardo Gómez Cuevas.</div>       
+        <div class="section-data"><strong>Título Del Informe:</strong> Proyecto Integrador Parcial 3.</div>
+        <div class="section-data"><strong>Nombres De los Alumnos:</strong><br> Wilson Iván Adame Reyes. <br>
+        Oswaldo Isaith Castillo Ibarra.<br>
+        Emmanuel Eduardo Lara Mares.<br>
+        Nieves Alejandro Moreno Avila.</div>
+        <div class="section-data"><strong>Grado:</strong> 4° Grupo: “C”</div>
+        <div class="section-data"><strong>Fecha De Entrega:</strong> Jueves 7 De Diciembre Del 2023.</div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <!---- Desarrolladores ---->
+    <div class="container animated">
+    <h2 class="text-center mb-3 seccion-title anime">Desarrolladores✨</h2>
+    </div>
+    <br>
+    <div class="developer-container anime">
+        <div class="developer animated">
+            <img src="Img/WilsonIvan.jpg" alt="Desarrollador 1" style="width: 50%;">
+            <h3 class="developer-name"><strong>Wilson Ivan Adame Reyes.</strong></h3>
+            <p class="developer-expertise">Desarrollador en HTML y CSS.</p>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100007113194938&mibextid=ZbWKwL" target="_blank"><img src="Img/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://wa.me/qr/UNEH7JZKML5ME1" target="_blank"><img src="Img/whatsapp.png" alt="WhatsApp"></a></li>
+                <li><a href="https://instagram.com/wilson.ivan_2?igshid=MzMyNGUyNmU2YQ==" target="_blank"><img src="Img/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div class="developer animated">
+            <img src="Img/OswaldoCastillo.jpg" alt="Desarrollador 2" style="width: 50%;">
+            <h3 class="developer-name"><strong>Oswaldo Isaith Castillo Ibarra.</strong></h3>
+            <p class="developer-expertise">Desarrollador en PHP.</p>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/OswaldoCastillo03?mibextid=ZbWKwL" target="_blank"><img src="Img/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://wa.me/qr/5LWA4JBV67GBL1" target="_blank"><img src="Img/whatsapp.png" alt="WhatsApp"></a></li>
+                <li><a href="https://instagram.com/oswacastillo03?igshid=MzMyNGUyNmU2YQ==" target="_blank"><img src="Img/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div class="developer animated">
+            <img src="Img/EmmanuelLara.jpg" alt="Desarrollador 3" style="width: 50%;">
+            <h3 class="developer-name"><strong>Emmanuel Eduardo Lara Mares.</strong></h3>
+            <p class="developer-expertise">Desarrollador en SQL, MySQL.</p>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100008588132953" target="_blank"><img src="Img/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://wa.me/qr/YH4GEIQCXBNJH1" target="_blank"><img src="Img/whatsapp.png" alt="WhatsApp"></a></li>
+                <li><a href="https://www.instagram.com/manelara8/" target="_blank"><img src="Img/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <div class="developer animated">
+            <img src="Img/NievesMoreno.jpg" alt="Desarrollador 4" style="width: 50%;">
+            <h3 class="developer-name"><strong>Nieves Alejandro Moreno Avila.</strong></h3>
+            <p class="developer-expertise">Desarrollador en Java y JavaScript.</p>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100013537367191&mibextid=ZbWKwL" target="_blank"><img src="Img/facebook.png" alt="Facebook"></a></li>
+                <li><a href="https://wa.me/qr/G6RNTWN6YAFIN1" target="_blank"><img src="Img/whatsapp.png" alt="WhatsApp"></a></li>
+                <li><a href="https://instagram.com/alejandro_moreno_5?igshid=MzMyNGUyNmU2YQ==" target="_blank"><img src="Img/instagram.png" alt="Instagram"></a></li>
+            </ul>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+<!-------------------------- Footer ------------------------>
+<footer class="bg-dark text-white text-center py-4">   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Contacto</h4>
+                <p><strong>Dirección:</strong> Fransico I Madero #69</p>
+                <p><strong>Teléfono:</strong> 449-756-4013</p>
+                <p><strong>Email:</strong> alex132moreno@gmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <h4 style="text-align: center;">Enlaces Rápidos</h4>
+                <ul class="enlaces-rapidos">
+                    <li><a href="Index.php">Inicio</a></li>
+                    <li><a href="Productos.php">Productos</a></li>
+                    <li><a href="https://wa.me/qr/5LWA4JBV67GBL1">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Síguenos en Redes Sociales</h4>
+            <div class="redes-sociales">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61553113776063&mibextid=2JQ9oc" target="_blank"><img src="Img/facebook.png" alt="Facebook"> Facebook</a></li>
+                    <li><a href="#" target="_blank"><img src="Img/twitter.png" alt="Twitter"> Twitter</a></li>
+                    <li><a href="#" target="_blank"><img src="Img/instagram.png" alt="Instagram"> Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/frog-market-53673928a/" target="_blank"><img src="Img/linkedin.png" alt="LinkedIn"> LinkedIn</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2023 Frog-Market. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let idleTime = 0;
+    let alertShown = false;
+
+    setInterval(timerIncrement, 1000);
+
+    window.addEventListener("mousemove", resetTimer);
+    window.addEventListener("keydown", resetTimer);
+
+    function timerIncrement() {
+        idleTime++;
+        if (!alertShown && idleTime > 15) {
+            alert ('Tu sesión expiró, inicia sesión de nuevo');
+            window.location.href = 'indexlogin.php';
+            alertShown =true;
+    }
+}
+
+function resetTimer() {
+    idleTime = 0;
+}
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script> 
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="JS/Script.JS"></script>
+</body>
+</html>

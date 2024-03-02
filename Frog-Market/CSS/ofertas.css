@@ -1,0 +1,267 @@
+/*body    {
+    background-image: url(brujo_pepe.png);
+}*/
+
+.titulo {
+    color: antiquewhite;
+    text-align: center;
+    font-family: cursive;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 0 auto;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 16px;
+}
+
+.flip-card-front {
+    background-image:
+        linear-gradient(
+            45deg, gray, #fff
+        );
+}
+
+.flip-card-front img {
+    width: 180px;
+    margin-top: 1rem;
+}
+
+.flip-card-back {
+    background-image:
+        linear-gradient(
+            315deg, #fff, gray
+        );
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back img {
+    width: 100px;
+    margin-top: 1rem;
+}
+
+.flip-card-back h3 {
+    margin-bottom: 0.3rem;
+}
+
+.flip-card-back h1 {
+    margin: 0;
+}
+
+/*Carrito Flotante*/
+#floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+#carrito-container {
+    position: fixed;
+    top: 50%;
+    left: 85%;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    z-index: 9998;
+}
+
+#carrito-container.visible {
+    display: block;
+}
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+#ca {
+      color: #fff;
+      text-decoration: none; 
+  }
+
+  #ca:visited {
+      color: #fff;
+  }
+
+  #ca:active {
+      color: #fff;
+  }
+
+  .seccion-title {
+    color: #fff;
+    background: linear-gradient(to right, #a4fff7, #AA1192);
+    padding: 10px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+* Menu de Navegacion */
+.navbar 
+{
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand 
+{
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link 
+{
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.navbar-toggler-icon 
+{
+    background-color: #fff; 
+}
+
+.navbar-toggler:focus 
+{
+    outline: none;
+}
+
+.navbar-nav 
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav .nav-link:hover 
+{
+    color: aqua;
+}
+
+/*Imagen tienda*/
+header 
+{
+    height: 100vh;
+    background: url('Img/Tienda.jfif') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+header.anime 
+{
+    position: relative;
+    z-index: 100; 
+}
+
+nav.anime 
+{
+    z-index: 200; 
+}
+
+/* Footer */
+footer 
+{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales 
+{
+    margin-bottom: 20px;
+}
+
+.redes-sociales a 
+{
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.redes-sociales img 
+{
+    width: 30px;
+    height: 30px;
+}
+
+.contacto 
+{
+    margin-bottom: 10px;
+}
+
+.contacto p 
+{
+margin: 0;
+}
+
+footer 
+{
+background-color: #333;
+color: #fff;
+text-align: l;
+padding: 1em;
+}
+
+.redes-sociales a,
+.enlaces-rapidos a
+{
+color: white; 
+text-decoration: none; 
+transition: color 0.3s; /* transición hover */
+}
+
+.redes-sociales img 
+        {
+            vertical-align: middle; /* Alinear verticalmente las imágenes con el texto */
+            margin-right: 5px; /* Añadir espacio a la derecha de las imágenes */
+        }
+
+.redes-sociales a:hover,
+.enlaces-rapidos a:hover
+{
+    color: #00FFFF; 
+}

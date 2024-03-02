@@ -1,0 +1,18 @@
+/* Carrusel Ofertas */
+@media only screen and (max-width: 768px) {
+    .carousel-container {
+        width: 100%; /* Haz que el contenedor ocupe todo el ancho en pantallas más pequeñas */
+        overflow: hidden; /* Evita que los elementos floten fuera del contenedor */
+    }
+
+    .product-item {
+        width: 50%; /* Muestra dos productos por fila en pantallas más pequeñas */
+    }
+}
+
+/* Consulta de medios para dispositivos móviles */
+@media only screen and (max-width: 480px) {
+    .product-item {
+        width: 100%; /* Muestra un producto por fila en dispositivos móviles */
+    }
+}

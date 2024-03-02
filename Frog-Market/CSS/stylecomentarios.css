@@ -1,0 +1,52 @@
+body 
+{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container 
+{
+    background: #ffffff9d;
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: cursive;
+    color: #c51f1f;
+    box-shadow: 7px 13px 37px #000;
+}
+.container h1 
+{
+    color: #333;
+    font-size: 28px;
+}
+.container form 
+{
+    margin-top: 20px;
+}
+.container form .form-group {
+    margin-bottom: 15px;
+}
+.container form .form-group label {
+    color: #333;
+    font-size: 18px;
+}
+.container form .form-group input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+.container form button {
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container form button:hover {
+    background-color: blue;
+}
